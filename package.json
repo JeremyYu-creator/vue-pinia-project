@@ -29,16 +29,5 @@
     "typescript": "^4.6.4",
     "vite": "^3.0.0",
     "vue-tsc": "^0.38.4"
-  },
-  "gitHooks": {
-    "commit-msg": "commitlint -e $GIT_PARAMS"
-  },
-  "config": {
-    "commitizen": {
-      "path": "./node_modules/cz-customizable"
-    },
-    "cz-customizable": {
-      "config": ".cz-configrc.js"
-    }
   }
 }
