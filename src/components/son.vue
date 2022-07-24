@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import {Button} from 'ant-design-vue'
 const props = defineProps({
   title: {
     type: String,
@@ -20,5 +21,8 @@ const emitEvent = defineEmits(['update:person'])
 <template>
     <div>
         uoi{{props.title}}
+    </div>
+    <div>
+      <a-button>Add</a-button>
     </div>    
 </template>
