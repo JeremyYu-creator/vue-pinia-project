@@ -12,6 +12,14 @@ const routes: Array<RouteRecordRaw> = [
     component: HelloWorld,
   },
   {
+    path: "/table",
+    name: "table",
+    meta: {
+        title: "路由页",
+    },
+    component: () => import ('@/views/table.vue'),
+  },
+  {
     path: "/helloworld",
     name: "helloworld",
     meta: {

@@ -23,6 +23,6 @@ const emitEvent = defineEmits(['update:person'])
         uoi{{props.title}}
     </div>
     <div>
-      <a-button>Add</a-button>
+      <a-button type="primary">Add</a-button>
     </div>    
 </template>
