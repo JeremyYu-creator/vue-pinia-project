@@ -3,19 +3,15 @@
 // Check out https://vuejs.org/api/sfc-script-setup.html#script-setup
 // import HelloWorld from './components/HelloWorld.vue'
 import Img from '@/assets/vue.svg'
+import Aside from '@/components/aside.vue'
+components: {
+  Aside
+}
 </script>
 
 <template>
-  <!-- <div>
-    <a href="https://vitejs.dev" target="_blank">
-      <img src="/vite.svg" class="logo" alt="Vite logo" />
-    </a>
-    <a href="https://vuejs.org/" target="_blank">
-      <img :src="Img" class="logo vue" alt="Vue logo" />
-    </a>
-  </div> -->
-  <!-- <HelloWorld msg="Vite + Vue" /> -->
-  <router-view></router-view>
+  <Aside/>
+  <!-- <router-view></router-view> -->
 </template>
 
 <style scoped>

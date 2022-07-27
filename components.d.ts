@@ -8,9 +8,18 @@ export {}
 declare module '@vue/runtime-core' {
   export interface GlobalComponents {
     AButton: typeof import('ant-design-vue/es')['Button']
+    ALayout: typeof import('ant-design-vue/es')['Layout']
+    ALayoutContent: typeof import('ant-design-vue/es')['LayoutContent']
+    ALayoutHeader: typeof import('ant-design-vue/es')['LayoutHeader']
+    ALayoutSider: typeof import('ant-design-vue/es')['LayoutSider']
+    AMenu: typeof import('ant-design-vue/es')['Menu']
+    AMenuItem: typeof import('ant-design-vue/es')['MenuItem']
     ARadio: typeof import('ant-design-vue/es')['Radio']
     ARadioGroup: typeof import('ant-design-vue/es')['RadioGroup']
+    Aside: typeof import('./src/components/aside.vue')['default']
+    ASubMenu: typeof import('ant-design-vue/es')['SubMenu']
     ATooltip: typeof import('ant-design-vue/es')['Tooltip']
+    Content: typeof import('./src/components/content.vue')['default']
     HelloWorld: typeof import('./src/components/HelloWorld.vue')['default']
     Login: typeof import('./src/components/login.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
