@@ -1,6 +1,5 @@
 <template>
-    <a-layout style="min-height: 100vh">
-        <a-layout-header/>
+    <a-layout style="min-height: 90vh">
         <a-layout>
             <!--左侧menulist-->
             <a-layout-sider v-model:collapsed="collapsed" collapsible>
@@ -25,7 +24,7 @@
             <!--右侧content-->
             <a-layout>
                 <a-layout-content>
-                    <Content :name="currentName"/>
+                    <!-- <router-view></router-view> -->
                 </a-layout-content>
             </a-layout>
         </a-layout>
@@ -34,6 +33,7 @@
 <script lang="ts" setup>
 import Content from '@/components/content.vue'
 import { ref } from 'vue';
+import { useRouter } from 'vue-router';
 import { PieChartOutlined,} from '@ant-design/icons-vue';
 components: {
     PieChartOutlined
@@ -79,7 +79,9 @@ const MenuList = [
     },
 ]
 const currentName = ref('')
+const router = useRouter()
 const changeRoute = (name: string) => {
     currentName.value = name
+    router.push({name: name})
 }
 </script>

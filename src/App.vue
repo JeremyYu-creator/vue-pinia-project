@@ -2,7 +2,7 @@
 // This starter template is using Vue 3 <script setup> SFCs
 // Check out https://vuejs.org/api/sfc-script-setup.html#script-setup
 // import HelloWorld from './components/HelloWorld.vue'
-import Img from '@/assets/vue.svg'
+// import Img from '@/assets/vue.svg'
 import Aside from '@/components/aside.vue'
 components: {
   Aside
@@ -10,8 +10,17 @@ components: {
 </script>
 
 <template>
-  <Aside/>
-  <!-- <router-view></router-view> -->
+  <a-layout style="min-height: 100vh">
+    <a-layout-header></a-layout-header>
+    <a-layout>
+      <a-layout-sider>
+        <Aside/>
+      </a-layout-sider>
+      <a-layout-content>
+        <router-view></router-view>
+      </a-layout-content>
+    </a-layout>
+  </a-layout>
 </template>
 
 <style scoped>
